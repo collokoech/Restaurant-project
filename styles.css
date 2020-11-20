@@ -4,45 +4,58 @@
             background: url(hotel.jpg)no-repeat;
             background-size: cover;
         } 
+        .container
+        {
+            text-align: center;
+            padding: 3px;
+        }
         .navbar{
-            width: 400px;
+            display: inline;
+            width: 450px;
             float: right;
             border: none;
         }
         .navbar ul li{
             width: 120px;
             float: left;
+            padding: 5px 1;
             margin: 10px auto;
             text-align: center;
+            border-radius: 5px;
+            background: #9E9E9E;
+            margin-right: 2px;
         }
         .navbar ul li a{
             text-decoration: none;
-            color: whitesmoke;
+            color: #FFFFFF;
+
         }
-        .navbar ul li:hover{
+        .navbar ul li:hover
+        {
             background-color: green;
         }
-        .navbar ul li a:hover{
+        .navbar ul li a:hover
+        {
             color: white;
         }
-        .wd{
+        .sidebar{
             width: 300px;
             height: 539px;
             background-color: black;
             opacity: 0.9;
             padding: 55px;
         }
-        .wd h1{
+        .sidebar h1{
             text-align: center;
             text-transform: uppercase;
             font-weight: 100px;
         }
-        .wd h4{
+        .sidebar h4{
             text-align: justify;
             color: darkgrey;
             font-weight: normal;
         }
-        .wd h2{
+        .sidebar h2{
             text-align: center;
             text-transform: uppercase;
             font-weight: normal;
@@ -57,7 +70,66 @@
             padding-right: 50px;
             text-align: center;
         }
-        form, input[type="button"]:hover{
+        .opt input[type="button"]:hover
+        {
             background-color: green;
+            cursor: pointer;
+        }
 
+        /* about styles */
+        .container .about_card
+        {
+            text-align: center;
+            font-size: 18px;
+            display: inline-block;
+            width: 60%;
+            height: 539px;
+            background-color: black;
+            opacity: 0.8;
+            padding: 55px;
+        }
+
+        /* contacts tyles */
+        .container .contacts_card
+        {
+            text-align: left;
+            font-size: 18px;
+            display: inline-block;
+            width: 60%;
+            height: 539px;
+            background-color: black;
+            opacity: 0.8;
+            padding: 55px;
+        }
+
+        .contacts_card form input
+        {
+            padding: 5px;
+            font-size: 17px;
+            border:none;
+            border-radius: 2px
+        }
+        .contacts_card form textarea
+        {
+            padding: 5px;
+            font-size: 17px;
+            border:none;
+            border-radius: 2px;
+            width:300px;
+            height: 100px;
+        }
+
+        .contacts_card form button
+        {
+            padding: 5px 15px;
+            font-size: 17px;
+            border:none;
+            border-radius: 2px;
+            font-weight:bold;
+        }
+        .contacts_card form button:hover
+        {
+            color: white;
+            background: green;
+            cursor: pointer;
         }
